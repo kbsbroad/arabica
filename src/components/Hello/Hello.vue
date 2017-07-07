@@ -21,14 +21,9 @@
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
-  },
-};
+import HelloComponent from './Hello.ts';
+
+export default HelloComponent;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
