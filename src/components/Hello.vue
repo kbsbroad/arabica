@@ -20,10 +20,14 @@
   </div>
 </template>
 
-<script>
-import HelloComponent from './Hello.ts';
+<script lang="ts">
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
 
-export default HelloComponent;
+@Component
+export default class HelloComponent extends Vue {
+  msg: string = 'Welcome to Your Vue.js App';
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
